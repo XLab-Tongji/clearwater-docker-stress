@@ -9,7 +9,6 @@ This repository contains instructions and resources for deploying [Project Clear
 ## Using Compose
 
 There is a [Compose file](minimal-distributed.yaml) to instantiate a minimal (non-fault-tolerant) distributed Clearwater deployment under Docker.
-  - 104.155.15.20
 
 #### Preparation
 
