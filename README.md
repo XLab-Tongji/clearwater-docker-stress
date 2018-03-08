@@ -43,7 +43,7 @@ This provisions numbers starting at 201000000 with the password 7kkzTyGW, and wi
 This will only provision data into Homestead's call-path cache, for efficiency - if you need Homer, Memento or Homestead-prov provisioning, follow the process below.
 
 
-*Note:* before run the stress_provision.sh, please make sure the cassandra-cli is working, you could have a test by running:
+*Note:* before running the stress_provision.sh, please make sure the cassandra-cli is working, you could have a test by running:
 
     cassandra-cli -v
 
