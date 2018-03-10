@@ -39,3 +39,9 @@ COPY liveness.sh /usr/share/kubernetes/
 # so copy the relevant supervisord config into the base container and we'll move it to /etc/supervisor/conf.d so that it actually gets 
 # invoked in the containers that need it.
 COPY socket-factory.supervisord.conf /etc/clearwater/socket-factory.supervisord.conf
+
+
+# Installing a tool for generating workload. 
+# It can produce CPU, memory, I/O, and disk stress.
+RUN apt-get update && apt-get -y install stress && apt-get clean
+COPY docker-stress.sh /usr/bin/
